@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% load static %}
+<html lang="en">
+  <head>
+    {% block content %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+    <title>Bobeyspickle</title>
+  </head>
+  <body>
+    <h1>Varieties</h1>
+
+    <div class="flex-container">
+      <div href="/1">
+        <a href="/1">Mango</a>
+      </div>
+      <div href="/2">
+        <a href="/2">Radish</a>
+      </div>
+      <div>
+        <a href="/3">Bamboo</a>
+      </div> 
+    </div>
+    <div class="sidebar">
+      <ul>All pickles</ul>
+      <ul>Bhutanese flavour</ul>
+      <ul>Indian spices</ul>
+      <ul>South city</ul>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>
